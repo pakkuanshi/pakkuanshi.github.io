@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Personal Info – Training Record Website</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+
+<body>
+  <nav aria-label="Primary">
+    <a href="index.html">Home</a>
+    <a href="PersonalInfo.html">Personal Info</a>
+    <a href="Record.html">Record</a>
+    <a href="Schedule.html">Schedule</a>
+    <a href="PersonalTrainer.html">Trainer</a>
+    <a href="Nutrition.html">Nutrition</a>
+  </nav>
+
+  <main class="main">
+    <h1>Set Your Info & Goals</h1>
+    <p>Use this page to define your goals and baseline. (Demo-only form for class—data won’t be saved.)</p>
+
+   <form action="Thank_You.html" method="get" id="profileForm">
+  <h2>Your baseline</h2>
+
+  <label for="height">Height (cm)</label>
+  <input id="height" name="height" type="number" min="0" inputmode="numeric">
+
+  <label for="weight">Weight (kg)</label>
+  <input id="weight" name="weight" type="number" min="0" inputmode="numeric">
+
+  <label for="goal">Primary goal</label>
+  <select id="goal" name="goal">
+    <option value="fatloss">Fat loss</option>
+    <option value="muscle">Build muscle</option>
+    <option value="performance">Better performance</option>
+  </select>
+
+  <h2>Notes</h2>
+  <label for="notes">Anything to consider (schedule, injuries, etc.)</label>
+  <textarea id="notes" name="notes" rows="4"></textarea>
+
+  <p id="formHelp">All inputs have labels for accessibility.</p>
+
+  <p>
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+  </p>
+</form>
+
+
+    <div class="figgrid">
+      <figure><img src="images/BodyType.jpg" alt="differe
